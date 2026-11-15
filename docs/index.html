@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>智能体金融文献平台 · Demo</title>
+<meta name="description" content="实验室专属文献发现、AI 阅读与研究分析平台的演示站点，数据来自智能体与经济金融交叉研究的阶段报告。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side" id="side">
+    <div class="brand"><b>智能体 × 经济金融</b><span>文献发现与研究分析平台 · Demo</span></div>
+    <nav class="nav" id="nav">
+      <div class="nav-group">研究成果</div>
+      <a href="#/overview" data-r="overview"><span class="ico">◎</span>总览</a>
+      <a href="#/library" data-r="library"><span class="ico">≡</span>文献库</a>
+      <a href="#/directions" data-r="directions"><span class="ico">◇</span>研究方向</a>
+      <a href="#/opportunities" data-r="opportunities"><span class="ico">✦</span>研究机会</a>
+      <a href="#/report" data-r="report"><span class="ico">▤</span>月报</a>
+      <div class="nav-group">平台运行</div>
+      <a href="#/review" data-r="review"><span class="ico">✓</span>审核台</a>
+      <a href="#/sources" data-r="sources"><span class="ico">⌁</span>来源管理</a>
+      <a href="#/method" data-r="method"><span class="ico">⚙</span>收集规范与流程</a>
+    </nav>
+    <div class="side-foot">数据截止 2026-11-06<br>来自课题组阶段报告<br><button class="theme-btn" id="themeBtn" type="button">切换深浅色</button></div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><b>智能体 × 经济金融 · Demo</b><button id="menuBtn" type="button">菜单</button></div>
+    <div class="demo-banner"><b>演示站点</b> · 文献、分类与统计来自课题组 2026-11-06 阶段报告；PDF 状态、审核队列与月报为流程演示。</div>
+    <main class="page" id="app"></main>
+  </div>
+</div>
+<div class="tip" id="tip"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
